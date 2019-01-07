@@ -1,6 +1,5 @@
 package com.fdm.order;
 
-import com.fdm.order.model.Order;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
