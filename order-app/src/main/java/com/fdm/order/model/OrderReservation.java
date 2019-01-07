@@ -5,6 +5,9 @@ package com.fdm.order.model;
  */
 public class OrderReservation {
 
-    long cutomerId;
+    String OrderId;
+    ResturantDetails resturantDetails;
+    CustomerDetails customerDetails;
+    OrderReservationItems orderReservationItems;
 
 }

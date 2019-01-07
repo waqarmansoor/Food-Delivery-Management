@@ -17,6 +17,5 @@ public class KafkaConsumer {
             containerFactory = "userKafkaListenerFactory")
     public void consumeJson(Order order) {
         System.out.println("Consumed JSON Message: " + order);
-
     }
 }
