@@ -1,9 +1,0 @@
-com\fdm\common\model\Customer.class
-com\fdm\common\model\CustomerDetails.class
-com\fdm\common\model\ResturantDetails.class
-com\fdm\common\model\OrderReservation.class
-com\fdm\common\model\RiderDetails.class
-com\fdm\common\model\OrderItems.class
-com\fdm\common\model\Order.class
-com\fdm\common\model\Customer$CustomerBuilder.class
-com\fdm\common\model\OrderReservationItems.class
