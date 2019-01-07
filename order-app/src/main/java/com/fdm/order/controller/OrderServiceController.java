@@ -1,8 +1,7 @@
 package com.fdm.order.controller;
 
-import com.fdm.order.model.Order;
+import com.fdm.common.model.Order;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.config.Scope;
 import org.springframework.context.ApplicationContext;
 
 import org.springframework.kafka.core.KafkaTemplate;

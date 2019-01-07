@@ -1,6 +1,6 @@
 package com.fdm.order.service;
 
-import com.fdm.order.model.Order;
+import com.fdm.common.model.Order;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

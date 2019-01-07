@@ -1,6 +1,7 @@
 package com.fdm.customer.controller;
 
-import com.fdm.customer.model.Customer;
+
+import com.fdm.common.model.Customer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

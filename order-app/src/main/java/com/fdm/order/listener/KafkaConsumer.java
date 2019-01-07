@@ -1,6 +1,6 @@
 package com.fdm.order.listener;
 
-import com.fdm.order.model.Order;
+import com.fdm.common.model.Order;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
