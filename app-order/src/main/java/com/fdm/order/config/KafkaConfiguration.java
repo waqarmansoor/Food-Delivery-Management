@@ -1,6 +1,7 @@
 package com.fdm.order.config;
 
 import com.fdm.common.model.Order;
+import com.fdm.common.model.OrderReservation;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -68,7 +69,7 @@ public class KafkaConfiguration {
     }
 
     @Bean
-    public ProducerFactory<String, Order> producerFactory() {
+    public ProducerFactory<String, OrderReservation> producerFactory() {
         Map<String, Object> config = new HashMap<>();
 
         config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
@@ -80,7 +81,7 @@ public class KafkaConfiguration {
 
 
     @Bean
-    public KafkaTemplate<String, Order> kafkaTemplate() {
+    public KafkaTemplate<String, OrderReservation> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
     }
 

@@ -22,13 +22,4 @@ public class SpringBootKafkaConsumerExampleApplication {
 		return new RestTemplate();
 	}
 
-	@Bean(name = "bean1")
-	public Order getOrder(){
-		return new Order(1L);
-	}
-
-	@Bean(name = "bean2")
-	public Order getOrder2(){
-		return new Order(2L);
-	}
 }

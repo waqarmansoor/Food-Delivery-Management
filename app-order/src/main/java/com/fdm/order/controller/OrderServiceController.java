@@ -1,6 +1,7 @@
 package com.fdm.order.controller;
 
 import com.fdm.common.model.Order;
+import com.fdm.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 
@@ -19,23 +20,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("order-service")
 public class OrderServiceController {
 
-    @Autowired
-    private KafkaTemplate<String, Order> kafkaTemplate;
+//    @Autowired
+//    private KafkaTemplate<String, Order> kafkaTemplate;
 
     @Autowired
-    ApplicationContext applicationContext ;
-
-    private static final String TOPIC = "order.receive";
-
+    OrderService orderService;
 
     @GetMapping("/publish/{name}")
     public String post(@PathVariable("name") final String name) {
 
-        Order order = (Order) applicationContext.getBean("bean1");
-        Order order2 = (Order) applicationContext.getBean("bean1");
-
-        System.out.println(order== order2);
-
+        orderService.orderReceive(new Order());
 //        kafkaTemplate.send(TOPIC, new Order(1L));
 
         return "Published successfully";
