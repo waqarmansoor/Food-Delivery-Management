@@ -55,7 +55,7 @@
 		<dependency>
 			<groupId>com.fdm.common</groupId>
 			<artifactId>app-common</artifactId>
-			<version>${fdm.common.version}</version>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
